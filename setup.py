@@ -23,7 +23,7 @@ setup(
     description='A pytest-based tool to list test fixtures declared but not used in a test',
     long_description=read('README.md'),
     py_modules=['loofah'],
-    install_requires=['pytest>=3.1.1', 'click==6.1'],
+    install_requires=['pytest>=3.1.1', 'click>=6.1'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: Pytest',
