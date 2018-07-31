@@ -1,4 +1,5 @@
 # loofah
+[![CircleCI](https://circleci.com/gh/steinnes/loofah.svg?style=svg)](https://circleci.com/gh/steinnes/loofah)
 
 A tool to list test fixtures declared but not used in a test.
 
