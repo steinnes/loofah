@@ -21,15 +21,19 @@ be called via the `py.test` command line.
 
 ## Installation
 
-You can install "loofah" via `pip`:
+You can install `loofah` via `pip`:
 
     $ pip install loofah
 
 
 ## Usage
 
-From your normal development shell, run loofah as you would run your tests (ie with
-any required environment variables or virtual environment enabled, etc):
+Since loofah relies on pytest collecting and being able to execute the tests,
+it needs to be run from your normal development shell, and probably installed
+in the venv of your project.
+
+So, from your normal development shell, run loofah as you would run your tests:
+(ie with any required environment variables or virtual environment enabled, etc)
 
     $ loofah test/unit
     ...
@@ -38,6 +42,12 @@ any required environment variables or virtual environment enabled, etc):
     test/unit/account_tests.py:28 in test_account_locks_after_three_attempts detected 2 unused fixtures:
         user
         monkeypatch
+
+
+## Why 'loofah' ?
+
+Why name this project after a fruit with fibrous, spongy interior often used to
+clean hard-to-reach areas of the human body?  That's a mystery indeed.
 
 
 ## License
