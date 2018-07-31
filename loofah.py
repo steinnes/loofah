@@ -20,8 +20,8 @@ def unindent(code_lines):
 
 
 def get_innermost_func(func):
-    if '__wrapped__' in func.func_dict:
-        return get_innermost_func(func.func_dict['__wrapped__'])
+    if '__wrapped__' in func.__dict__:
+        return get_innermost_func(func.__dict__['__wrapped__'])
     return func
 
 
