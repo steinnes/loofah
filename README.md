@@ -2,6 +2,7 @@
 [![CircleCI](https://circleci.com/gh/steinnes/loofah.svg?style=svg)](https://circleci.com/gh/steinnes/loofah)
 
 A tool to list test fixtures declared but not used in a test:
+
 ![image](https://user-images.githubusercontent.com/1097582/43468569-dfb0a932-94d3-11e8-8c99-ef9245ec430f.png)
 
 
