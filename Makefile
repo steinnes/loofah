@@ -5,6 +5,9 @@ venv:
 clean:
 	rm -rf *.pyc loofah.egg-info
 
+test:
+	tox --tox-pyenv-no-fallback
+
 release:
 	@-rm dist/*
 	venv/bin/python setup.py sdist bdist_wheel
