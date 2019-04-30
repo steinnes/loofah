@@ -13,15 +13,16 @@ def read(fname):
 
 setup(
     name='loofah',
-    version='0.1.3',
+    version='0.1.4',
     author='Steinn Eldjarn Sigurdarson',
-    author_email='steinn@takumi.com',
+    author_email='steinnes@gmail.com',
     maintainer='Steinn Eldjarn Sigurdarson',
-    maintainer_email='steinn@takumi.com',
+    maintainer_email='steinnes@gmail.com',
     license='MIT',
     url='https://github.com/steinnes/loofah',
     description='A pytest-based tool to list test fixtures declared but not used in a test',
     long_description=read('README.md'),
+    long_description_content_type='text/markdown',
     py_modules=['loofah'],
     install_requires=['pytest>=3.1.1', 'click>=6.1', 'mock==2.0.0'],
     classifiers=[
