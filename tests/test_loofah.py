@@ -14,3 +14,6 @@ def test_loofah():
     pytest.main(['--collect-only', '-p', 'no:terminal', 'tests/fixtures/'], plugins=[list_unused])
     f = get_test(list_unused, 'test_1')
     assert 'fixture1' in f[1]
+
+    f2 = get_test(list_unused, 'test_2')
+    assert 'fixture1' in f2[1]
