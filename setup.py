@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name='loofah',
-    version='0.1.2',
+    version='0.1.3',
     author='Steinn Eldjarn Sigurdarson',
     author_email='steinn@takumi.com',
     maintainer='Steinn Eldjarn Sigurdarson',
