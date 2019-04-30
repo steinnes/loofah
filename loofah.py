@@ -28,14 +28,14 @@ def get_innermost_func(func):
 class TestFunction(object):
     def __init__(self, test):
         self.test = test
-        self.func = test._getobj()
+        self.func = get_innermost_func(test._getobj())
         self.code = self._get_code(self.func)
         self.loaded_fixtures = self.test.fixturenames
         self.declared_fixtures = self._get_declared_fixtures()
         self.used_locals = self._get_used_locals()
 
     def _get_code(self, func):
-        function_definition = inspect.getsourcelines(get_innermost_func(func))
+        function_definition = inspect.getsourcelines(func)
         return "".join(unindent(function_definition[0]))
 
     def _get_declared_fixtures(self):
