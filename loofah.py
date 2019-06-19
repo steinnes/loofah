@@ -3,6 +3,7 @@ import ast
 import click
 import inspect
 import pytest
+import sys
 
 
 def unindent(code_lines):
@@ -39,7 +40,10 @@ class TestFunction(object):
         return "".join(unindent(function_definition[0]))
 
     def _get_declared_fixtures(self):
-        argspec = inspect.getargspec(self.func)
+        if sys.version_info[0] < 3:
+            argspec = inspect.getargspec(self.func)
+        else:
+            argspec = inspect.getfullargspec(self.func)
         ret = []
         for fixture in self.loaded_fixtures:
             if fixture in argspec.args:
