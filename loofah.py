@@ -105,5 +105,6 @@ def list_missing(path, ignore):
         if len(unused_fixtures) > 0:
             click.echo(repr_function(test, unused_fixtures))
 
+
 if __name__ == "__main__":
     list_missing()
